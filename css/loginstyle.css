@@ -34,3 +34,14 @@ body {
 a:link, a:visited, a:active {
     text-decoration:none;
 }
+
+.dropdown button {
+    background-color: #48e;
+    color: #ededed;
+
+}
+
+.dropdown-toggle {
+    background-color: #48e;
+	color: #fff;
+}
