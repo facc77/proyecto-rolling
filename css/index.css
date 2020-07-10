@@ -16,3 +16,18 @@
 a:link, a:visited, a:active {
     text-decoration:none;
 }
+
+.ic {
+    color: #fff;
+}
+
+.mensaje404 {
+    background-color: #FCB82F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background404 {
+    height: 600px;
+}

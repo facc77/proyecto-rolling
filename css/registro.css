@@ -19,6 +19,8 @@ body{
 #choose {
     margin-top: 25px;
     width: 500px;
+    display: flex;
+    justify-content: center;
 }
 
 #ui label, h1{
