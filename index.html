@@ -30,7 +30,7 @@
     </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a href="#" class="navbar-brand">
                 <img src="./img/logo.png" height="60px" alt="San Cristobal">
             </a>
@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse justify-content-between"
                 id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="index.html" class="nav-item nav-link active">inicio</a>
+                    <a href="#header" class="nav-item nav-link active">inicio</a>
                     <a href="#info-one" class="nav-item nav-link">Nosotros</a>
                     <a href="#comentarios" class="nav-item nav-link">Resenas</a>
                     <div class="dropdown">
@@ -84,7 +84,7 @@
 
         <header id="header">
             <div class="container my-5">
-                <div class="row mt-5">
+                <div class="row">
                     <div class="col-md-6 mt-5">
                         <div class="header-content-left">
                             <img src="./img/veterinaria5.jpg" style="width:
@@ -101,7 +101,8 @@
                                     capacitación y formación constante, para
                                     darle la más cálida y profesional atención a
                                     tu mascota.</p>
-                                <a href="#" class="btn btn-outline-secondary
+                                <a href="nosotros.html" class="btn
+                                    btn-outline-secondary
                                     btn-lg mt-2">Mas sobre nosotros</a>
                             </div>
                         </div>
@@ -165,7 +166,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <section id="info-one">
                     <div class="container">
                         <div class="row my-5">
@@ -328,6 +328,13 @@
                                     3727</p>
                             </div>
                             <!-- Grid column -->
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto
+                                mb-4">
+                                <h6 class="text-uppercase font-weight-bold">Nuestra
+                                    Ubicacion</h6>
+                                <div id="map"></div>
+
+                            </div>
                         </div>
                         <!-- Grid row -->
                     </div>
@@ -361,19 +368,14 @@
                 ScrollReveal({ duration:2000}).reveal('.header-content-right', {delay:1500});
                 ScrollReveal({ duration:2000}).reveal('#filas', {delay:1700});
 
-      
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+                
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-                });
-                });
-                });
-
-       
-
+    </script>
+                <script>
+        function initMap () {
+            var location = {lat:-26.984500, lng:-65.246144};
+            var
+        }
     </script>
             </body>
         </html>
