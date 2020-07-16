@@ -518,10 +518,10 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnK0mWf3ZhSCVx8YQZ6IAX5yb5FxIo4Hs&callback=initMap">
                 </script>
         <script>
-            //Get the button
+            //seleccionar boton
             var mybutton = document.getElementById("myBtn");
             
-            // When the user scrolls down 20px from the top of the document, show the button
+            // cuando el usuario scrollea 20 px muestra el boton
             window.onscroll = function() {scrollFunction()};
             
             function scrollFunction() {
@@ -532,7 +532,7 @@
               }
             }
             
-            // When the user clicks on the button, scroll to the top of the document
+            // Cuando el usuario clickea el boton, regresa al tope de pagina
             function topFunction() {
               document.body.scrollTop = 0;
               document.documentElement.scrollTop = 0;
@@ -547,26 +547,26 @@
             ScrollReveal({ duration:2000}).reveal('#cuerpo', {delay:1700});
 </script>
         <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+                                // selecciona el modal
+                                var modal = document.getElementById("myModal");
     
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn2");
+                                // selecciona el boton que abre el modal
+                                var btn = document.getElementById("myBtn2");
     
-    // Get the <span> element that closes the modal
+                                    // selecciona el elemento q cierra el modal
     var span = document.getElementsByClassName("close")[0];
     
-    // When the user clicks the button, open the modal 
+    // cuando el usuario cliquea el boton, abre el modal  
     btn.onclick = function() {
       modal.style.display = "block";
     }
     
-    // When the user clicks on <span> (x), close the modal
+     // selecciona el elemento q cierra el modal
     span.onclick = function() {
       modal.style.display = "none";
     }
     
-    // When the user clicks anywhere outside of the modal, close it
+    // cuando el usuario clickea fuera del modal, lo cierra
     window.onclick = function(event) {
       if (event.target == modal) {
         modal.style.display = "none";
