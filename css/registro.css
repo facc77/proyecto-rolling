@@ -12,7 +12,7 @@ body{
     margin-bottom: 50px;
 }
 
-.container {
+.cont1 {
     margin-left: 60px;
 }
 
@@ -32,7 +32,7 @@ body{
 .nav-link1 {
     background-color: #48e;
     color: #ededed;
-    margin-top: auto;
+    margin-top: 10px;
 	margin-left:6px;
 	padding: 6px 9px;
     border-radius: 5px;
@@ -46,5 +46,17 @@ body{
 
 a:link, a:visited, a:active {
     text-decoration:none;
+}
+
+.footer-copyright {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.footer-copyright a {
+    color: #fff;
 }
 

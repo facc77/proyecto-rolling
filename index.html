@@ -8,7 +8,7 @@
             rel="stylesheet">
         <script src="https://unpkg.com/scrollreveal"></script>
 
-        <title>Document</title>
+        <title>Veterinaria San Cristobal</title>
         <link rel="stylesheet"
             href="./css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -16,20 +16,29 @@
             href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
             integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
             crossorigin="anonymous">
-
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <style>
-        #comentarios {
-            background-color: #f1f1f1;
-        }
-    </style>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            ScrollReveal({ duration:1000}).reveal('.navbar');
+            ScrollReveal({ duration:1000}).reveal('.header-content-left', {delay:750});
+            ScrollReveal({ duration:1000}).reveal('#SocialMedia', {delay:1000});
+            ScrollReveal({ duration:1000}).reveal('.header-content-right', {delay:1500});
+            ScrollReveal({ duration:1000}).reveal('#filas', {delay:1700});
+
+            
+
+</script>
     </head>
     <body>
+        <button onclick="topFunction()" id="myBtn" title="Volver"><i
+                class="fas fa-arrow-up"></i></button>
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a href="#" class="navbar-brand">
                 <img src="./img/logo.png" height="60px" alt="San Cristobal">
@@ -43,7 +52,7 @@
             <div class="collapse navbar-collapse justify-content-between"
                 id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="#header" class="nav-item nav-link active">inicio</a>
+                    <a href="#header" class="nav-item nav-link active">Inicio</a>
                     <a href="#info-one" class="nav-item nav-link">Nosotros</a>
                     <a href="#comentarios" class="nav-item nav-link">Resenas</a>
                     <div class="dropdown">
@@ -79,276 +88,367 @@
                 </div>
             </div>
         </nav>
+        <ul id="SocialMedia" class="nav flex-column">
+            <div class="icon-bar">
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            </div>
 
-
-
-        <header id="header">
-            <div class="container my-5">
-                <div class="row">
-                    <div class="col-md-6 mt-5">
-                        <div class="header-content-left">
-                            <img src="./img/veterinaria5.jpg" style="width:
-                                100%;">
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-5">
-                        <div class="header-content-right">
-                            <h1 class="display-4">Veterinaria San Cristobal</h1>
-                            <p class="mt-5"><p>Desde 1907, brindamos la mejor
-                                    atencion para tu ser querido<br>Para ello,
-                                    seleccionamos los mejores profesionales
-                                    veterinarios, quienes continúan en
-                                    capacitación y formación constante, para
-                                    darle la más cálida y profesional atención a
-                                    tu mascota.</p>
-                                <a href="nosotros.html" class="btn
-                                    btn-outline-secondary
-                                    btn-lg mt-2">Mas sobre nosotros</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="filas">
+        </ul>
+        <main>
+            <header id="header">
+                <div class="container">
                     <div class="row">
-                        <div class="col-sm mx-5">
-                            <h2>Ecografias</h2>
-                            <p>Servicio de ecografías con equipo móvil para
-                                diagnósticos expeditivos </p>
-                            <p><a class="btn btn-outline-secondary" href="#"
-                                    role="button">Ver detalles »</a></p>
+                        <div class="col-md-6 mt-5">
+                            <div class="header-content-left">
+                                <img src="./img/veterinaria5.jpg" style="width:
+                                    100%;">
+                            </div>
                         </div>
-                        <div class="col-sm">
-                            <h2>Cirugias</h2>
-                            <p>Cirugías de alta y baja complejidad, realizadas
-                                en nuestros quirófanos. </p>
-                            <p><a class="btn btn-outline-secondary" href="#"
-                                    role="button">Ver detalles »</a></p>
-                        </div>
-                        <div class="col-sm">
-                            <h2>Consulta de Animales Exóticos</h2>
-                            <p>Podemos revisar su ave, reptil, roedor,etc</p>
-                            <p><a class="btn btn-outline-secondary" href="#"
-                                    role="button">Ver detalles »</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div id="comentarios">
-                    <ul class="list-unstyled p-3">
-                        <h1 class="container text-center display-4">Comentarios
-                            de nuestros clientes</h1>
-                        <li class="media">
-                            <img src="./img/cliente1.jfif" width="100px"
-                                height="100px" class="mr-3" alt="...">
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">@julieta</h5>
-                                La mejor veterinaria que conoci. Siempre vuelvo
-                                por los precios bajos
-                            </div>
-                        </li>
-                        <li class="media my-4">
-                            <img src="./img/cliente2.jfif" width="100px"
-                                height="100px" class="mr-3" alt="...">
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">@julian</h5>
-                                Siempre elijo la veterinaria San Cristobal por
-                                su excelente atencion personalizada
-                            </div>
-                        </li>
-                        <li class="media">
-                            <img src="./img/cliente3.jfif" width="100px"
-                                height="100px" class="mr-3" alt="...">
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">@Ricardo</h5>
-                                Muy buen servicio. Me reciben la obra social sin
-                                problema.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <section id="info-one">
-                    <div class="container">
-                        <div class="row my-5">
-                            <div class="col-md-6">
-                                <div class="info-left">
-                                    <img src="./img/veterinaria7.jpg"
-                                        style="width: 100%;" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-6 my-auto">
-                                <div class="info-right">
-                                    <h2 class="display-4">Sobre nosotros</h2>
-                                    <p>Nuestra filosofia se basa en cuidar a
-                                        todas las mascotas como si fueran parte
-                                        de nuestra familia. Para nosotros, esto
-                                        significa brindar el mismo amor,
-                                        atencion y cuidado como si fueramos sus
-                                        duenos. Somos amantes de los animales y
-                                        nuestros clientes son testigo de ello</p>
-                                    <a href="#" class="btn btn-outline-secondary
-                                        btn-lg">Read More</a>
+                        <div class="col-md-6 mt-5">
+                            <div class="header-content-right">
+                                <h1 class="display-4">Veterinaria San Cristobal</h1>
+                                <p class="mt-5"><p>Desde 1907, brindamos la
+                                        mejor
+                                        atencion para tu ser querido<br>Para
+                                        ello,
+                                        seleccionamos los mejores profesionales
+                                        veterinarios, quienes continúan en
+                                        capacitación y formación constante, para
+                                        darle la más cálida y profesional
+                                        atención a
+                                        tu mascota.</p>
+                                    <a href="nosotros.html" class="btn
+                                        btn-outline-secondary
+                                        btn-lg mt-2">Mas sobre nosotros</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <section id="info-two" style="background: #f1f1f1;">
+
+                    <div id="filas" class="my-5">
+                        <div class="row">
+                            <div class="col-sm mx-5">
+                                <h2>Ecografias</h2>
+                                <p>Servicio de ecografías con equipo móvil para
+                                    diagnósticos expeditivos </p>
+                                <p><a class="btn btn-outline-secondary" href="#"
+                                        role="button">Ver detalles »</a></p>
+                            </div>
+                            <div class="col-sm">
+                                <h2>Cirugias</h2>
+                                <p>Cirugías de alta y baja complejidad,
+                                    realizadas
+                                    en nuestros quirófanos. </p>
+                                <p><a class="btn btn-outline-secondary" href="#"
+                                        role="button">Ver detalles »</a></p>
+                            </div>
+                            <div class="col-sm">
+                                <h2>Consulta de Animales Exóticos</h2>
+                                <p>Podemos revisar su ave, reptil, roedor,etc</p>
+                                <p><a class="btn btn-outline-secondary" href="#"
+                                        role="button">Ver detalles »</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="comentarios">
+                        <ul class="list-unstyled p-3">
+                            <h1 class="container text-center display-4">Comentarios
+                                de nuestros clientes</h1>
+                            <li class="media">
+                                <img src="./img/cliente1.jfif" width="100px"
+                                    height="100px" class="mr-3" alt="...">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">@julieta</h5>
+                                    La mejor veterinaria que conoci. Siempre
+                                    vuelvo
+                                    por los precios bajos
+                                </div>
+                            </li>
+                            <li class="media my-4">
+                                <img src="./img/cliente2.jfif" width="100px"
+                                    height="100px" class="mr-3" alt="...">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">@julian</h5>
+                                    Siempre elijo la veterinaria San Cristobal
+                                    por
+                                    su excelente atencion personalizada
+                                </div>
+                            </li>
+                            <li class="media">
+                                <img src="./img/cliente3.jfif" width="100px"
+                                    height="100px" class="mr-3" alt="...">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">@Ricardo</h5>
+                                    Muy buen servicio. Me reciben la obra social
+                                    sin
+                                    problema.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <section id="info-one">
                         <div class="container">
                             <div class="row my-5">
                                 <div class="col-md-6">
-                                    <h2>Lorem, ipsum dolor.</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Quae perspiciatis iste
-                                        tempora, mollitia quibusdam maxime
-                                        voluptate obcaecati voluptatum molestiae
-                                        aliquid quod ipsum, odit vitae repellat
-                                        magnam dolores, quas est dolor!</p>
+                                    <div class="info-left">
+                                        <img src="./img/veterinaria7.jpg"
+                                            style="width: 100%;" alt="">
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <h2>Lorem, ipsum dolor.</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Quae perspiciatis iste
-                                        tempora, mollitia quibusdam maxime
-                                        voluptate obcaecati voluptatum molestiae
-                                        aliquid quod ipsum, odit vitae repellat
-                                        magnam dolores, quas est dolor!</p>
+                                <div class="col-md-6 my-auto">
+                                    <div class="info-right">
+                                        <h2 class="display-4">Sobre nosotros</h2>
+                                        <p>Nuestra filosofia se basa en cuidar a
+                                            todas las mascotas como si fueran
+                                            parte
+                                            de nuestra familia. Para nosotros,
+                                            esto
+                                            significa brindar el mismo amor,
+                                            atencion y cuidado como si fueramos
+                                            sus
+                                            duenos. Somos amantes de los
+                                            animales y
+                                            nuestros clientes son testigo de
+                                            ello</p>
+                                        <a href="404page.html" class="btn
+                                            btn-outline-secondary
+                                            btn-lg">Leer mas</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <section id="info-two" style="background: #f1f1f1;">
+                            <div class="container">
+                                <div class="row my-5">
+                                    <div class="col-md-6">
+                                        <h2>Lorem, ipsum dolor.</h2>
+                                        <p>Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Quae perspiciatis
+                                            iste
+                                            tempora, mollitia quibusdam maxime
+                                            voluptate obcaecati voluptatum
+                                            molestiae
+                                            aliquid quod ipsum, odit vitae
+                                            repellat
+                                            magnam dolores, quas est dolor!</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2>Lorem, ipsum dolor.</h2>
+                                        <p>Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Quae perspiciatis
+                                            iste
+                                            tempora, mollitia quibusdam maxime
+                                            voluptate obcaecati voluptatum
+                                            molestiae
+                                            aliquid quod ipsum, odit vitae
+                                            repellat
+                                            magnam dolores, quas est dolor!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </section>
-                </section>
-                <!-- Footer -->
-                <footer class="page-footer font-small unique-color-dark">
-                    <div style="background-color: #48e;">
-                        <div class="container">
-                            <!-- Grid row-->
-                            <div class="row py-4 d-flex align-items-center">
-                                <!-- Grid column -->
-                                <div class="col-md-6 col-lg-5 text-center
-                                    text-md-left mb-4 mb-md-0">
-                                    <h6 class="mb-0">SEGUINOS EN</h6>
-                                </div>
-                                <!-- Grid column -->
-                                <div class="col-md-6 col-lg-7 text-center
-                                    text-md-right">
-                                    <!-- Facebook -->
-                                    <a class="ic"
-                                        href="http://www.facebook.com">
-                                        <i class="fab fa-facebook-f white-text
-                                            mr-4"> </i>
-                                    </a>
-                                    <!-- Twitter -->
-                                    <a class="ic"
-                                        href="http://www.twitter.com">
-                                        <i class="fab fa-twitter white-text
-                                            mr-4"> </i>
-                                    </a>
-                                    <!--Instagram-->
-                                    <a class="ic"
-                                        href="http://www.instagram.com">
-                                        <i class="fab fa-instagram white-text">
-                                        </i>
-                                    </a>
-                                </div>
-                                <!-- Grid column -->
-                            </div>
-                            <!-- Grid row-->
-                        </div>
-                    </div>
-                    <!-- Footer Links -->
-                    <div class="container text-center text-md-left mt-5">
-                        <!-- Grid row -->
-                        <div class="row mt-3">
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto
-                                mb-4">
-                                <!-- Content -->
-                                <h6 class="text-uppercase font-weight-bold">Veterinaria
-                                    San Cristobal</h6>
-                                <hr class="deep-purple accent-2 mb-4 mt-0
-                                    d-inline-block mx-auto" style="width:
-                                    60px;">
-                                <p>Sanamos con Amor. Sabemos que ellos, son
-                                    nuestros herman@s y merecen un trato en
-                                    igualdad de amor y
-                                    respeto. Todo nuestro personal ha sido
-                                    especialmente escogido por su alta calidez
-                                    humana y gran amor y
-                                    armonía en su interior. Porque Veterinaria
-                                    San Cristobal es un espacio de disfrute
-                                    donde el respeto prima ante todo,
-                                    entre nosotros como familia y para con usted
-                                    y su animal de compañía. Gracias por
-                                    preferirnos !</p>
-                            </div>
-                            <!-- Grid column -->
-                            <!-- Grid column -->
-                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto
-                                mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase font-weight-bold">Productos/Servicios</h6>
-                                <hr class="deep-purple accent-2 mb-4 mt-0
-                                    d-inline-block mx-auto" style="width:
-                                    60px;">
-                                <p>
-                                    <a href="alimentacion.html">Alimentos</a>
-                                </p>
-                                <p>
-                                    <a href="404page.html">Accesorios</a>
-                                </p>
-                                <p>
-                                    <a href="404page.html">Vacunacion</a>
-                                </p>
-                                <h6 class="text-uppercase font-weight-bold">Horario
-                                    de Atencion</h6>
-                                <strong>Lunes a Sabado:</strong> <br>"8 a 20 hs"
-                                <br>
-                                <strong>Domingos y Feriados:</strong> <br>"10 a
-                                14 hs"
-                            </div>
-                            <!-- Grid column -->
-                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto
-                                mb-md-0 mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase font-weight-bold">Contacto</h6>
-                                <hr class="deep-purple accent-2 mb-4 mt-0
-                                    d-inline-block mx-auto" style="width:
-                                    60px;">
-                                <p>
-                                    <i class="fas fa-home mr-3"></i>Siempre Viva
-                                    123, San Miguel de Tucuman, Tucuman,
-                                    Argentina</p>
-                                <p>
-                                    <i class="fas fa-envelope mr-3"></i>
-                                    info@vetsancristobal.com.ar</p>
-                                <p>
-                                    <i class="fas fa-phone mr-3"></i> 381 648
-                                    6975</p>
-                                <p>
-                                    <i class="fas fa-phone mr-3"></i> 381 617
-                                    3727</p>
-                            </div>
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto
-                                mb-4">
-                                <h6 class="text-uppercase font-weight-bold">Nuestra
-                                    Ubicacion</h6>
-                                <div id="map"></div>
+                    <button onclick="topFunction()" id="myBtn" title="Go to
+                        top">Top</button>
 
+                    <!-- Footer -->
+                    <footer class="page-footer font-small unique-color-dark">
+                        <div style="background-color: #48e;">
+                            <div class="container">
+                                <!-- Grid row-->
+                                <div class="row py-4 d-flex align-items-center">
+                                    <!-- Grid column -->
+                                    <div class="col-md-6 col-lg-5 text-center
+                                        text-md-right mb-4 mb-md-0">
+                                        <h6 class="mb-0">SEGUINOS EN</h6>
+                                    </div>
+                                    <!-- Grid column -->
+                                    <div class="col-md-6 col-lg-7 text-center
+                                        text-md-left">
+                                        <a class="ic"
+                                            href="http://www.linkedin.com">
+                                            <i class="fa fa-linkedin
+                                                white-text mr-4">
+                                            </i>
+                                        </a>
+                                        <!-- Facebook -->
+                                        <a class="ic"
+                                            href="http://www.facebook.com">
+                                            <i class="fab fa-facebook-f
+                                                white-text
+                                                mr-4"> </i>
+                                        </a>
+                                        <!-- Twitter -->
+                                        <a class="ic"
+                                            href="http://www.twitter.com">
+                                            <i class="fab fa-twitter white-text
+                                                mr-4"> </i>
+                                        </a>
+                                        <!--Instagram-->
+                                        <a class="ic"
+                                            href="http://www.instagram.com">
+                                            <i class="fab fa-instagram
+                                                white-text">
+                                            </i>
+                                        </a>
+
+                                    </div>
+                                    <!-- Grid column -->
+                                </div>
+                                <!-- Grid row-->
                             </div>
                         </div>
-                        <!-- Grid row -->
-                    </div>
-                    <!-- Footer Links -->
-                    <!-- Copyright -->
-                    <div class="footer-copyright text-center py-3">© 2020
-                        Copyright:
-                        <a href="https://veterinariasc.com.ar/"> Veterinaria San
-                            Cristobal</a>
-                    </div>
-                    <!-- Copyright -->
-                </footer>
-                <!-- Footer -->
-                <!--requerido por bootstrap-->
+                        <!-- Footer Links -->
+                        <div class="container text-center text-md-left mt-5">
+                            <!-- Grid row -->
+                            <div class="row mt-3">
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto
+                                    mb-4">
+                                    <!-- Content -->
+                                    <h6 class="text-uppercase font-weight-bold">Veterinaria
+                                        San Cristobal</h6>
+                                    <hr class="deep-purple accent-2 mb-4 mt-0
+                                        d-inline-block mx-auto" style="width:
+                                        60px;">
+                                    <p>Sanamos con Amor. Sabemos que ellos, son
+                                        nuestros herman@s y merecen un trato en
+                                        igualdad de amor y
+                                        respeto. Todo nuestro personal ha sido
+                                        especialmente escogido por su alta
+                                        calidez
+                                        humana y gran amor y
+                                        armonía en su interior. Porque
+                                        Veterinaria
+                                        San Cristobal es un espacio de disfrute
+                                        donde el respeto prima ante todo,
+                                        entre nosotros como familia y para con
+                                        usted
+                                        y su animal de compañía. Gracias por
+                                        preferirnos !</p>
+                                </div>
+                                <!-- Grid column -->
+                                <!-- Grid column -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto
+                                    mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase font-weight-bold">Productos/Servicios</h6>
+                                    <hr class="deep-purple accent-2 mb-4 mt-0
+                                        d-inline-block mx-auto" style="width:
+                                        60px;">
+                                    <p>
+                                        <a href="alimentacion.html">Alimentos</a>
+                                    </p>
+                                    <p>
+                                        <a href="404page.html">Accesorios</a>
+                                    </p>
+                                    <p>
+                                        <a href="404page.html">Vacunacion</a>
+                                    </p>
+                                    <h6 class="text-uppercase font-weight-bold">Horario
+                                        de Atencion</h6>
+                                    <strong>Lunes a Sabado:</strong> <br>"8 a 20
+                                    hs"
+                                    <br>
+                                    <strong>Domingos y Feriados:</strong> <br>"10
+                                    a
+                                    14 hs"
+                                </div>
+                                <!-- Grid column -->
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto
+                                    mb-md-0 mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+                                    <hr class="deep-purple accent-2 mb-4 mt-0
+                                        d-inline-block mx-auto" style="width:
+                                        60px;">
+                                    <p>
+                                        <i class="fas fa-home mr-3"></i>Siempre
+                                        Viva
+                                        123, San Miguel de Tucuman, Tucuman,
+                                        Argentina</p>
+                                    <p>
+                                        <i class="fas fa-envelope mr-3"></i>
+                                        info@vetsancristobal.com.ar</p>
+                                    <p>
+                                        <i class="fas fa-phone mr-3"></i> 381
+                                        648
+                                        6975</p>
+                                    <p>
+                                        <i class="fas fa-phone mr-3"></i> 381
+                                        617
+                                        3727</p>
+                                    <button id="myBtn2" class="nav-link1">Formulario
+                                        de contacto</button>
+
+                                    <!-- The Modal -->
+                                    <div id="myModal" class="modal">
+
+                                        <!-- Modal content -->
+                                        <div id="container3"
+                                            class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <div id="container2"
+                                                class="container">
+                                                <form action="action_page.php">
+                                                    <label for="fname">Primer
+                                                        nombre</label>
+                                                    <input type="text"
+                                                        id="fname"
+                                                        name="firstname">
+
+                                                    <label for="lname">Apellido</label>
+                                                    <input type="text"
+                                                        id="lname"
+                                                        name="lastname"
+                                                        place>
+
+                                                    <label for="subject">Tema</label>
+                                                    <textarea id="subject"
+                                                        name="subject"
+                                                        style="height:100px"></textarea>
+                                                    <input type="submit"
+                                                        value="Enviar">
+
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Trigger/Open The Modal -->
+
+
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto
+                                    mb-4">
+                                    <h6 class="text-uppercase font-weight-bold">Nuestra
+                                        Ubicacion</h6>
+                                    <div id="map"></div>
+
+                                </div>
+                            </div>
+                            <!-- Grid row -->
+                        </div>
+
+                        <!-- Footer Links -->
+                        <!-- Copyright -->
+                        <div class="footer-copyright text-center py-3">© 2020
+                            Copyright:
+                            <a href="https://veterinariasc.com.ar/"> Veterinaria
+                                San
+                                Cristobal</a>
+                        </div>
+                        <!-- Copyright -->
+                    </footer>
+                    <!-- Footer -->
+                    <!--requerido por bootstrap-->
+                </main>
                 <script
                     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
                     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -358,24 +458,78 @@
                     src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
                     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
                     crossorigin="anonymous">
+    
     </script>
                 <script src="./bootstrap.min.js"></script>
                 <script src="https://unpkg.com/scrollreveal"></script>
-                <script src="https://unpkg.com/scrollreveal"></script>
                 <script>
-                ScrollReveal({ duration:2000}).reveal('.navbar');
-                ScrollReveal({ duration:2000}).reveal('.header-content-left', {delay:750});
-                ScrollReveal({ duration:2000}).reveal('.header-content-right', {delay:1500});
-                ScrollReveal({ duration:2000}).reveal('#filas', {delay:1700});
-
-                
-
-    </script>
+                    ScrollReveal({ duration:1000}).reveal('.navbar');
+                    ScrollReveal({ duration:1000}).reveal('.header-content-left', {delay:750});
+                    ScrollReveal({ duration:1000}).reveal('#SocialMedia', {delay:1000});
+                    ScrollReveal({ duration:1000}).reveal('.header-content-right', {delay:1500});
+                    ScrollReveal({ duration:1000}).reveal('#filas', {delay:1700});
+    
+                    
+    
+        </script>
                 <script>
-        function initMap () {
-            var location = {lat:-26.984500, lng:-65.246144};
-            var
-        }
-    </script>
+                    function initMap() {
+                      var uluru = {lat: -26.8037784, lng: -65.2416889};
+                      var map = new google.maps.Map(
+                          document.getElementById('map'), {zoom: 16, center: uluru});
+                      var marker = new google.maps.Marker({position: uluru, map: map});
+                    }
+                        </script>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnK0mWf3ZhSCVx8YQZ6IAX5yb5FxIo4Hs&callback=initMap">
+                        </script>
+                <script>
+                            //Get the button
+                            var mybutton = document.getElementById("myBtn");
+                            
+                            // When the user scrolls down 20px from the top of the document, show the button
+                            window.onscroll = function() {scrollFunction()};
+                            
+                            function scrollFunction() {
+                              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                                mybutton.style.display = "block";
+                              } else {
+                                mybutton.style.display = "none";
+                              }
+                            }
+                            
+                            // When the user clicks on the button, scroll to the top of the document
+                            function topFunction() {
+                              document.body.scrollTop = 0;
+                              document.documentElement.scrollTop = 0;
+                            }
+                            </script>
+                <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+                                
+                                // Get the button that opens the modal
+                                var btn = document.getElementById("myBtn2");
+                                
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+                                
+                                // When the user clicks the button, open the modal 
+                                btn.onclick = function() {
+                                  modal.style.display = "block";
+                                }
+                                
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() {
+                                  modal.style.display = "none";
+                                }
+                                
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function(event) {
+                                  if (event.target == modal) {
+                                    modal.style.display = "none";
+                                  }
+                                }
+                                </script>
             </body>
         </html>
